@@ -11,6 +11,13 @@
 }
 
 body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +51,12 @@ body {
   padding: 16px 27px;
 }
 
+.audio-container * {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 #controls {
   width: 100%;
   margin-top: 5rem;
@@ -61,6 +74,8 @@ body {
   color: white;
   border-radius: 1rem;
   padding: 1rem 0;
+  border: 0px;
+  cursor: pointer;
 }
 
 i {
