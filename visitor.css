@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  font-family: "Pretendard-Regular";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 98vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  max-height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  width: 80%;
+  margin: auto auto;
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.audio-container {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.9rem;
+  border: 1px solid var(--unnamed-color-72af43);
+  box-shadow: 1px 2px 4px #00000029;
+  border: 1px solid #72af43;
+  border-radius: 100px;
+  padding: 16px 27px;
+}
+
+#controls {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 2 - 10px);
+  background-color: #72af43;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem 0;
+}
+
+i {
+  margin-bottom: 0.3rem;
+  font-size: 2rem;
+}
+
+.btn-title {
+  font-size: 0.9rem;
+}
